@@ -1,0 +1,123 @@
+.content-field{
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+    box-sizing: border-box;
+    padding: 0px 160px;
+
+    .content-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #d4d4d4;
+
+        .content-row{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .header-icon{
+                font-weight: bolder;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .content-title{
+        font-weight: bolder;
+        color: #3a3a3a;
+        font-size: 32px;
+    }
+
+    .content-area{
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.search-hide{
+    display: none;
+}
+
+.search-show{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .search-group{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+
+        .search-label{
+            font-weight: bold;
+            color: #3a3a3a;
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+    }
+
+    .form-control{
+        width: 460px;
+        height: 32px;
+        border-radius: 8px;
+        border: 1px solid #d4d4d4;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+
+    .search-select{
+        width: 320px;
+        height: 32px;
+        border-radius: 8px;
+        border: 1px solid #d4d4d4;        
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 1025px){
+    .content-field{
+        padding: 0 100px;
+    }
+
+    .content-area{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 769px){
+    .search-show{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 210px;
+
+        .search-group{
+            margin-bottom: 12px;
+
+            .form-control{
+                width: 320px;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .content-field{
+        padding: 0 10px;
+    }
+}

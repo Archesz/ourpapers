@@ -1,0 +1,10 @@
+{
+    "Papers": [
+        {"Author": "Jovi","Link": "", "Theme": "red", "Title": "Hierarchical Text-Conditional Image Generation with CLIP Latents", "Keywords": "Machine Learning, Image Processing, Tech"},
+        {"Author": "Samuel","Link": "", "Theme": "blue", "Title": "GeoPy: Space and Geology processing", "Keywords": "Geology , Image Processing, Biology"},
+        {"Author": "Talasso","Link": "", "Theme": "green", "Title": "Statitics analyzes for  difference of models", "Keywords": "Math, Regression, Machine Learning"},
+        {"Author": "Mateus","Link": "", "Theme": "pink", "Title": "Probability for study of cases", "Keywords": "Statics, Math, Research"},
+        {"Author": "Profeta","Link": "", "Theme": "purple", "Title": "Math models implementation and structure", "Keywords": "Math, Methods, Implementation"},
+        {"Author": "Aline","Link": "", "Theme": "yellow", "Title": "Hardware integration: Development robotics with Raspberry PI", "Keywords": "Machine Learning, Image Processing, Tech"}
+    ]
+}

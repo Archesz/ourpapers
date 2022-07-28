@@ -1,0 +1,135 @@
+#menu-container{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 0px 160px;
+    z-index: 99;
+
+    .menu-logo{
+        cursor: pointer;
+    }
+
+    .menu-items{
+        width: 600px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        
+        .menu-item{
+            font-weight: bold;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            padding-bottom: 6px;
+            margin-left: 45px;
+
+            cursor: pointer;
+            
+            &:hover, .active{
+                color: var(--primary);
+                border-bottom: 2px solid var(--primary);
+            }
+        }
+    }
+
+    .menu-buttons{
+        height: 50px;
+        width: 240px;
+        display: flex;
+        align-items: center;
+
+        .buttons{
+            
+            padding: 0px 16px;
+            border-right: 2px solid #D4D4D4;
+            
+            .button-icon{
+                font-size: 24px;
+                margin-left: 16px;
+                cursor: pointer;
+            }
+
+        }
+
+        #menu-user{
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: black;
+            margin-left: 16px;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.menu-icon{
+    font-size: 60px;
+    display: none;
+}
+
+/* Media */
+
+@media (max-width: 1025px){
+    #menu-container{
+        padding: 0px 40px;
+
+        .menu-items{
+            width: 400px;
+            .menu-item{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 426px){
+
+    #menu-container{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .menu-logo{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-items{
+        display: none;
+
+        .menu-item{
+            display: none;
+        }
+    }
+
+    .menu-buttons{
+
+        .buttons{
+            padding: none;
+            width: 80px;
+
+        }
+    }
+}
+
+@media (max-width: 376px){
+    .menu-icon{
+        font-size: 70px;
+    }    
+}
+
+@media (max-width: 320px){
+    .menu-icon{
+        font-size: 200px;
+    }    
+}

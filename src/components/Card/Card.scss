@@ -1,0 +1,110 @@
+.card-container{
+    width: 340px;
+    height: 195px;
+    border-radius: 12px;
+    background-color: #3A3A3A;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    .card-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .card-author{
+            padding: 5px 28px;
+            border-radius: 4px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: bold;
+            color: #3a3a3a;
+            font-size: 16px;
+            font-family: 'Inter', sans-serif; // trocar pra poppins
+        }
+        
+        .card-buttons{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50px;
+
+            .card-button{
+                padding: 2px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-self: center;
+            }
+        }
+    }
+
+    .card-title{
+        width: 100%;
+        margin-top: 12px;
+        height: 85px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        border-bottom: 1px solid #D4D4D4;
+    }
+
+    .card-footer{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+        .card-keyword{
+            font-size: 10px;
+            color: #D4D4D4;
+            font-size: bold;
+            font-family: 'Inter', sans-serif;
+            margin-right: 4px;
+        }
+    }
+
+}
+
+/* Themes */
+
+.border-red{border: 3px solid #FFADAD;}
+.border-blue{border: 3px solid #A0C4FF;}
+.border-yellow{border: 3px solid #FFD6A5;}
+.border-green{border: 3px solid #CAFFBF;}
+.border-purple{border: 3px solid #BDB2FF;}
+.border-pink{border: 3px solid #FFC6FF}
+
+.background-red{background: #FFADAD;}
+.background-blue{background: #A0C4FF;}
+.background-yellow{background: #FFD6A5;}
+.background-green{background: #CAFFBF;}
+.background-purple{background: #BDB2FF;}
+.background-pink{background: #FFC6FF}
+
+@media (max-width: 376px){
+    .card-container{
+        width: 360px;
+        height: 210px;
+
+        .card-title{
+            font-size: 16px;
+            height: 110px;
+        }
+
+        .card-footer{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
