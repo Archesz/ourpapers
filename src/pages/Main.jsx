@@ -38,7 +38,7 @@ function Main() {
 
     function searchTitle(){
         let title = document.querySelector("#title_input").value
-        setTitle(title);
+        setTitle(title.toLowerCase());
     }
 
     function searchType(){
@@ -106,7 +106,7 @@ function Main() {
                 <div className="content-area">
 
                     {papers.map((paper, index) => {
-                        if(paper["Title"].includes(title) && paper["Keywords"].includes(tag) && paper["Theme"].includes(type)){
+                        if(paper["Title"].toLowerCase().includes(title) && paper["Keywords"].includes(tag) && paper["Theme"].includes(type)){
                             return(
                                 <Card author={paper["Author"]} link={paper["Link"]} theme={paper["Theme"]} title={paper["Title"]} keywords={paper["Keywords"]} key={index}/>
                             )
